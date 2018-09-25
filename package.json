@@ -1,0 +1,29 @@
+{
+  "name": "wasteday",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "game",
+    "web",
+    "canvas"
+  ],
+  "author": "ErBlack",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ErBlack/wasteday.git"
+  },
+  "devDependencies": {
+    "phaser": "^3.13.0",
+    "phaser3-plugin-isometric": "0.0.6"
+  }
+}
