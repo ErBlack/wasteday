@@ -2,6 +2,7 @@
   "name": "wasteday",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://erblack.me/wasteday/",
   "dependencies": {
     "react-scripts": "1.1.5"
   },
@@ -9,7 +10,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postversion":"npm run build && npm run publish",
+    "publish": "ghpages -p build/"
   },
   "keywords": [
     "game",
@@ -23,6 +26,7 @@
     "url": "git+ssh://git@github.com/ErBlack/wasteday.git"
   },
   "devDependencies": {
+    "ghpages": "0.0.10",
     "phaser": "^3.13.0",
     "phaser3-plugin-isometric": "0.0.6"
   }

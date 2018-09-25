@@ -40,7 +40,7 @@ function preload() {
     frameHeight: 80
   });
 
-  this.load.image('floor', 'assets/floor/ground.jpg');
+  this.load.image('floor', 'assets/ground.jpg');
 }
 
 function create() {
