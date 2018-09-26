@@ -1,12 +1,5 @@
-import Countdown from './countdown';
-
 import 'phaser';
 import './canvas.css';
-
-const START = new Date(2018, 9, 13, 16);
-
-new Countdown(document.querySelector('#timer'), START);
-
 /* global Phaser:true */
 
 const width = 1280;

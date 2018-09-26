@@ -1,8 +1,12 @@
 const INTERVALS = [1000, 60, 60, 24, 7];
 
-function twoDigits(v) {
+
+function d2(v) {
     return ('0' + v).substr(-2);
 }
+
+
+function plural(n, f) {n %= 100; if (n > 10 && n < 20) return f[2]; n %= 10; return f[n > 1 && n < 5 ? 1 : n === 1 ? 0 : 2]}
 
 export default class Countdown {
     constructor(elem, start) {
@@ -14,8 +18,6 @@ export default class Countdown {
     }
 
     render() {
-        let text = '';
-
         const {
             direction,
             weeks,
@@ -25,8 +27,27 @@ export default class Countdown {
             seconds
         } = this._offset();
 
+
         if (direction === 1) {
-            return `w${weeks}d${days} ${hours}:${twoDigits(minutes)}:${twoDigits(seconds)}`;
+            const result = ['Через'];
+
+            if (weeks) {
+                result.push(weeks + ' ' + plural(weeks, ['неделя', 'недели', 'недель']));
+            }
+            if (days) {
+                result.push(days + ' ' + plural(days, ['день', 'дня', 'дней']));
+            }
+            // if (hours) {
+            //     result.push(hours + ' ' + plural(hours, ['час', 'часа', 'часов']));
+            // }
+            // if (minutes) {
+            //     result.push(minutes + ' ' + plural(minutes, ['минута', 'минуты', 'минут']));
+            // }
+            // if (seconds) {
+            //     result.push(seconds + ' ' + plural(seconds, ['секунда', 'секунды', 'секунд']));
+            // }
+
+            return `${result.join(' ')} ${d2(hours)}ч ${d2(minutes)}м ${d2(seconds)}с`;
         } else {
             return 'Времени не осталось';
         }

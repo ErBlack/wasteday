@@ -1,0 +1,55 @@
+.terminal
+{
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    color: #3DF500;
+    border: #4B3D22 20px ridge;
+    border-bottom-width: 40px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #34342C, #1F1E1A);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.3), inset 0 15px 20px rgba(0,0,0,.7);
+    text-shadow: .1em .1em rgba(0,0,0,.7);
+}
+
+.terminal a
+{
+    color: #3DF500;
+}
+
+.terminal a:hover
+{
+    color: #fff;
+}
+
+.terminal_text
+{
+    padding: 15px 25px;
+}
+
+.terminal + .terminal
+{
+    margin-top: 35px;
+}
+
+.terminal__title
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0px;
+
+    margin-bottom: 10px;
+    padding: 2px 0 0 8px;
+
+    border-width: 10px;
+    border-style: ridge;
+    border-color: #4B3D22;
+    border-bottom-width: 0;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, #34342C, #1F1E1A);
+    box-shadow: inset 0 0 8px rgba(0,0,0,.3), inset 0 6px 6px rgba(0,0,0,.7);
+
+    line-height: 1.2em;
+}
