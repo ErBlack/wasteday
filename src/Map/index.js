@@ -14,7 +14,7 @@ const center = [
 ymaps.ready(function() {
     var map = new ymaps.Map('map', {
         center,
-        zoom: 15,
+        zoom: 14,
         controls: ['zoomControl']
     });
     map.geoObjects.add(new ymaps.GeoObject({

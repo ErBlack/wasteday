@@ -2,7 +2,6 @@ import './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
-import './links.css';
 import './terminal.css';
 import './message.css';
 import './Map';
