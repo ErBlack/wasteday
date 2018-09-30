@@ -2,6 +2,7 @@ canvas
 {
     position: fixed;
     z-index: -1;
+    image-rendering: pixelated;
 }
 
 @media (min-aspect-ratio: 1280/720) {

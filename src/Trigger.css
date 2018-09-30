@@ -1,0 +1,35 @@
+.trigger
+{
+    opacity: .2;
+
+    font-size: 12px;
+    line-height: 0.5em;
+    color: #000;
+}
+
+.trigger:active
+{
+    cursor: wait;
+}
+
+.trigger:before {
+    position: absolute;
+    top: 0;
+    right: -1.1em;
+
+    width: 1em;
+
+    content: '. . .';
+
+    text-shadow: none;
+}
+
+.trigger:hover
+{
+    color: #fff;
+}
+
+.terminal.hidden .trigger:active
+{
+    cursor: no-drop;
+}
