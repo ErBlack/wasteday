@@ -32,20 +32,11 @@ export default class Countdown {
             const result = ['Через'];
 
             if (weeks) {
-                result.push(weeks + ' ' + plural(weeks, ['неделя', 'недели', 'недель']));
+                result.push(weeks + ' ' + plural(weeks, ['неделю', 'недели', 'недель']));
             }
             if (days) {
                 result.push(days + ' ' + plural(days, ['день', 'дня', 'дней']));
             }
-            // if (hours) {
-            //     result.push(hours + ' ' + plural(hours, ['час', 'часа', 'часов']));
-            // }
-            // if (minutes) {
-            //     result.push(minutes + ' ' + plural(minutes, ['минута', 'минуты', 'минут']));
-            // }
-            // if (seconds) {
-            //     result.push(seconds + ' ' + plural(seconds, ['секунда', 'секунды', 'секунд']));
-            // }
 
             return `${result.join(' ')} ${d2(hours)}ч ${d2(minutes)}м ${d2(seconds)}с`;
         } else {
